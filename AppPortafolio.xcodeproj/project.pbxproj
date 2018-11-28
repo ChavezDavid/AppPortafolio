@@ -210,28 +210,16 @@
 			children = (
 				3D939F2621AE3FEE00F4F9A5 /* AppDelegate.swift */,
 				3D939F2821AE3FEE00F4F9A5 /* ViewController.swift */,
+				3D939F8621AE81A000F4F9A5 /* ProyectoDetalle.swift */,
 				3D939F2A21AE3FEF00F4F9A5 /* Main.storyboard */,
 				3D939F2D21AE3FF500F4F9A5 /* Assets.xcassets */,
 				3D939F2F21AE3FF500F4F9A5 /* LaunchScreen.storyboard */,
 				3D939F3221AE3FF500F4F9A5 /* Info.plist */,
-				3D939F5821AE6DF700F4F9A5 /* Proyecto.swift */,
-				3D939F5A21AE71A100F4F9A5 /* Usuario.swift */,
-				3D939F5C21AE739300F4F9A5 /* Comentario.swift */,
-				3D939F5E21AE742C00F4F9A5 /* DatosProyectos.swift */,
-				3D939F6021AE749600F4F9A5 /* DatosUsuarios.swift */,
-				3D939F6221AE750100F4F9A5 /* DatosComentarios.swift */,
-				3D939F8221AE7DD200F4F9A5 /* ListaProyectosController.swift */,
-				3D939F8421AE7F5400F4F9A5 /* CeldaProyectoController.swift */,
-				3D939F8621AE81A000F4F9A5 /* ProyectoDetalle.swift */,
-				3D939F8821AE864500F4F9A5 /* ListaBuscarController.swift */,
-				3D939F8A21AE877C00F4F9A5 /* CeldaBuscarController.swift */,
-				3D939F8C21AE881500F4F9A5 /* PerfilController.swift */,
-				3D939F8E21AE884700F4F9A5 /* ListaComentariosController.swift */,
-				3D939F9021AE8E3F00F4F9A5 /* CeldaComentarioController.swift */,
-				3D939F9221AE8E9700F4F9A5 /* AgregarComentarioController.swift */,
-				3D939F9421AE8F4400F4F9A5 /* UsuarioController.swift */,
-				3D939F9621AE8FD200F4F9A5 /* CrearUsuarioController.swift */,
-				3D939F9821AE900800F4F9A5 /* RecuperarContraController.swift */,
+				3D939F9E21AE92C000F4F9A5 /* Datos */,
+				3D939F9A21AE91CA00F4F9A5 /* Controllers */,
+				3D939F9F21AE92FC00F4F9A5 /* ListasController */,
+				3D939F9D21AE92A400F4F9A5 /* CellController */,
+				3D939F9C21AE929500F4F9A5 /* Classes */,
 			);
 			path = AppPortafolio;
 			sourceTree = "<group>";
@@ -266,6 +254,58 @@
 				3D939F7C21AE78DF00F4F9A5 /* Alamofire.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3D939F9A21AE91CA00F4F9A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D939F8C21AE881500F4F9A5 /* PerfilController.swift */,
+				3D939F9221AE8E9700F4F9A5 /* AgregarComentarioController.swift */,
+				3D939F9421AE8F4400F4F9A5 /* UsuarioController.swift */,
+				3D939F9621AE8FD200F4F9A5 /* CrearUsuarioController.swift */,
+				3D939F9821AE900800F4F9A5 /* RecuperarContraController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3D939F9C21AE929500F4F9A5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D939F5821AE6DF700F4F9A5 /* Proyecto.swift */,
+				3D939F5A21AE71A100F4F9A5 /* Usuario.swift */,
+				3D939F5C21AE739300F4F9A5 /* Comentario.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		3D939F9D21AE92A400F4F9A5 /* CellController */ = {
+			isa = PBXGroup;
+			children = (
+				3D939F8421AE7F5400F4F9A5 /* CeldaProyectoController.swift */,
+				3D939F8A21AE877C00F4F9A5 /* CeldaBuscarController.swift */,
+				3D939F9021AE8E3F00F4F9A5 /* CeldaComentarioController.swift */,
+			);
+			name = CellController;
+			sourceTree = "<group>";
+		};
+		3D939F9E21AE92C000F4F9A5 /* Datos */ = {
+			isa = PBXGroup;
+			children = (
+				3D939F5E21AE742C00F4F9A5 /* DatosProyectos.swift */,
+				3D939F6021AE749600F4F9A5 /* DatosUsuarios.swift */,
+				3D939F6221AE750100F4F9A5 /* DatosComentarios.swift */,
+			);
+			name = Datos;
+			sourceTree = "<group>";
+		};
+		3D939F9F21AE92FC00F4F9A5 /* ListasController */ = {
+			isa = PBXGroup;
+			children = (
+				3D939F8221AE7DD200F4F9A5 /* ListaProyectosController.swift */,
+				3D939F8821AE864500F4F9A5 /* ListaBuscarController.swift */,
+				3D939F8E21AE884700F4F9A5 /* ListaComentariosController.swift */,
+			);
+			name = ListasController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
