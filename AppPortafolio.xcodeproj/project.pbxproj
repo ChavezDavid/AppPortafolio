@@ -14,6 +14,12 @@
 		3D939F3121AE3FF500F4F9A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D939F2F21AE3FF500F4F9A5 /* LaunchScreen.storyboard */; };
 		3D939F3C21AE3FF500F4F9A5 /* AppPortafolioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939F3B21AE3FF500F4F9A5 /* AppPortafolioTests.swift */; };
 		3D939F4721AE3FF500F4F9A5 /* AppPortafolioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939F4621AE3FF500F4F9A5 /* AppPortafolioUITests.swift */; };
+		3D939F5921AE6DF700F4F9A5 /* Proyecto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939F5821AE6DF700F4F9A5 /* Proyecto.swift */; };
+		3D939F5B21AE71A100F4F9A5 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939F5A21AE71A100F4F9A5 /* Usuario.swift */; };
+		3D939F5D21AE739300F4F9A5 /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939F5C21AE739300F4F9A5 /* Comentario.swift */; };
+		3D939F5F21AE742C00F4F9A5 /* DatosProyectos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939F5E21AE742C00F4F9A5 /* DatosProyectos.swift */; };
+		3D939F6121AE749600F4F9A5 /* DatosUsuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939F6021AE749600F4F9A5 /* DatosUsuarios.swift */; };
+		3D939F6321AE750100F4F9A5 /* DatosComentarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D939F6221AE750100F4F9A5 /* DatosComentarios.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		3D939F4221AE3FF500F4F9A5 /* AppPortafolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppPortafolioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D939F4621AE3FF500F4F9A5 /* AppPortafolioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPortafolioUITests.swift; sourceTree = "<group>"; };
 		3D939F4821AE3FF500F4F9A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D939F5821AE6DF700F4F9A5 /* Proyecto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proyecto.swift; sourceTree = "<group>"; };
+		3D939F5A21AE71A100F4F9A5 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		3D939F5C21AE739300F4F9A5 /* Comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
+		3D939F5E21AE742C00F4F9A5 /* DatosProyectos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosProyectos.swift; sourceTree = "<group>"; };
+		3D939F6021AE749600F4F9A5 /* DatosUsuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosUsuarios.swift; sourceTree = "<group>"; };
+		3D939F6221AE750100F4F9A5 /* DatosComentarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosComentarios.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,12 @@
 				3D939F2D21AE3FF500F4F9A5 /* Assets.xcassets */,
 				3D939F2F21AE3FF500F4F9A5 /* LaunchScreen.storyboard */,
 				3D939F3221AE3FF500F4F9A5 /* Info.plist */,
+				3D939F5821AE6DF700F4F9A5 /* Proyecto.swift */,
+				3D939F5A21AE71A100F4F9A5 /* Usuario.swift */,
+				3D939F5C21AE739300F4F9A5 /* Comentario.swift */,
+				3D939F5E21AE742C00F4F9A5 /* DatosProyectos.swift */,
+				3D939F6021AE749600F4F9A5 /* DatosUsuarios.swift */,
+				3D939F6221AE750100F4F9A5 /* DatosComentarios.swift */,
 			);
 			path = AppPortafolio;
 			sourceTree = "<group>";
@@ -256,8 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D939F6321AE750100F4F9A5 /* DatosComentarios.swift in Sources */,
+				3D939F5F21AE742C00F4F9A5 /* DatosProyectos.swift in Sources */,
+				3D939F5B21AE71A100F4F9A5 /* Usuario.swift in Sources */,
 				3D939F2921AE3FEE00F4F9A5 /* ViewController.swift in Sources */,
+				3D939F5921AE6DF700F4F9A5 /* Proyecto.swift in Sources */,
 				3D939F2721AE3FEE00F4F9A5 /* AppDelegate.swift in Sources */,
+				3D939F6121AE749600F4F9A5 /* DatosUsuarios.swift in Sources */,
+				3D939F5D21AE739300F4F9A5 /* Comentario.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
