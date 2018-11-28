@@ -233,7 +233,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="DDG-z8-846" kind="show" id="F6M-zc-Cgw"/>
+                                            <segue destination="DDG-z8-846" kind="show" identifier="goToDetalleProyecto" id="F6M-zc-Cgw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -310,7 +310,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Agregar comentario"/>
                                 <connections>
-                                    <segue destination="ZUl-aQ-GKr" kind="show" id="MEj-11-UNe"/>
+                                    <segue destination="ZUl-aQ-GKr" kind="show" identifier="goToComentario" id="MEj-11-UNe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -510,11 +510,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="138" id="4Vx-4N-J97" customClass="CeldaProyectoController" customModule="AppPortafolio" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="138"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="141" id="4Vx-4N-J97" customClass="CeldaProyectoController" customModule="AppPortafolio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="141"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Vx-4N-J97" id="x1e-PD-0UE">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="137.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="140.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jos-oH-Zie">
@@ -545,7 +545,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="DDG-z8-846" kind="show" id="ewm-VK-DDc"/>
+                                            <segue destination="DDG-z8-846" kind="show" identifier="goToProyectoDetalle" id="ewm-VK-DDc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -557,14 +557,6 @@
                     <tabBarItem key="tabBarItem" title="Inicio" id="h7y-SN-k0i"/>
                     <navigationItem key="navigationItem" id="uKo-c1-Fcd">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Bde-fb-6tF">
-                            <rect key="frame" x="112" y="7.5" width="151" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="Populares"/>
-                                <segment title="Nuevos"/>
-                            </segments>
-                        </segmentedControl>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alC-Em-rdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -648,7 +640,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cu6-Co-BZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="BQm-73-82m">
                     <connections>
-                        <segue destination="jiR-lH-sSx" kind="show" id="QLO-N1-QdM"/>
+                        <segue destination="jiR-lH-sSx" kind="show" identifier="goToUsuario" id="QLO-N1-QdM"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="T9x-KR-0rU">
