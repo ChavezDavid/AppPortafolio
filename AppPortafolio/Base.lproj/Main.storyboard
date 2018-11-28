@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Crear usuario-->
         <scene sceneID="fpN-eu-lAx">
             <objects>
-                <viewController id="v0k-or-SP5" sceneMemberID="viewController">
+                <viewController title="Crear usuario" id="v0k-or-SP5" customClass="CrearUsuarioController" customModule="AppPortafolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jtM-Lr-HIf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="-565.36731634182911"/>
         </scene>
-        <!--View Controller-->
+        <!--Inicio Sesion-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppPortafolio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Inicio Sesion" id="BYZ-38-t0r" customClass="ViewController" customModule="AppPortafolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--Recuperar contraseña-->
         <scene sceneID="LLr-oc-nx5">
             <objects>
-                <viewController id="cgj-YG-fSG" sceneMemberID="viewController">
+                <viewController title="Recuperar contraseña" id="cgj-YG-fSG" customClass="RecuperarContraController" customModule="AppPortafolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gbI-N5-y4V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,7 +188,7 @@
         <!--Buscar-->
         <scene sceneID="bWr-PY-uxa">
             <objects>
-                <viewController id="uv2-d9-6fj" sceneMemberID="viewController">
+                <viewController id="uv2-d9-6fj" customClass="ListaBuscarController" customModule="AppPortafolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u22-hX-dxe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,7 +198,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="138" id="6Rw-cs-jeo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="138" id="6Rw-cs-jeo" customClass="CeldaBuscarController" customModule="AppPortafolio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Rw-cs-jeo" id="2xc-rk-RH2">
@@ -266,10 +266,10 @@
             </objects>
             <point key="canvasLocation" x="3068" y="455.62218890554726"/>
         </scene>
-        <!--View Controller-->
+        <!--Comentarios-->
         <scene sceneID="MRi-4w-tRJ">
             <objects>
-                <viewController id="UAX-8H-0CL" sceneMemberID="viewController">
+                <viewController title="Comentarios" id="UAX-8H-0CL" customClass="ListaComentariosController" customModule="AppPortafolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3eb-lG-gwh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,7 +279,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="115" id="BrW-jg-uMR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="115" id="BrW-jg-uMR" customClass="CeldaComentarioController" customModule="AppPortafolio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BrW-jg-uMR" id="U3x-p3-Tp7">
@@ -322,10 +322,10 @@
             </objects>
             <point key="canvasLocation" x="3956" y="455.62218890554726"/>
         </scene>
-        <!--View Controller-->
+        <!--Agregar comentario-->
         <scene sceneID="KvF-UF-o1E">
             <objects>
-                <viewController id="ZUl-aQ-GKr" sceneMemberID="viewController">
+                <viewController title="Agregar comentario" id="ZUl-aQ-GKr" customClass="AgregarComentarioController" customModule="AppPortafolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dAx-RY-Lfb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -373,10 +373,10 @@
             </objects>
             <point key="canvasLocation" x="2102" y="1119"/>
         </scene>
-        <!--Id-->
+        <!--Perfil-->
         <scene sceneID="jqX-Nc-qjy">
             <objects>
-                <viewController id="jyD-Ys-gDf" sceneMemberID="viewController">
+                <viewController title="Perfil" id="jyD-Ys-gDf" customClass="PerfilController" customModule="AppPortafolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8ZY-cb-U99">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -500,7 +500,7 @@
         <!--Inicio-->
         <scene sceneID="ZuY-gX-pmP">
             <objects>
-                <viewController id="m12-uT-6X3" sceneMemberID="viewController">
+                <viewController id="m12-uT-6X3" customClass="ListaProyectosController" customModule="AppPortafolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3HU-Ye-6UU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -510,7 +510,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="138" id="4Vx-4N-J97">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="138" id="4Vx-4N-J97" customClass="CeldaProyectoController" customModule="AppPortafolio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Vx-4N-J97" id="x1e-PD-0UE">
@@ -571,10 +571,10 @@
             </objects>
             <point key="canvasLocation" x="3068" y="-205.54722638680661"/>
         </scene>
-        <!--View Controller-->
+        <!--Datos proyecto-->
         <scene sceneID="L27-cm-wCI">
             <objects>
-                <viewController id="DDG-z8-846" sceneMemberID="viewController">
+                <viewController title="Datos proyecto" id="DDG-z8-846" customClass="ProyectoDetalle" customModule="AppPortafolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Py-Df-x7f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -659,10 +659,10 @@
             </objects>
             <point key="canvasLocation" x="3956" y="-206.44677661169416"/>
         </scene>
-        <!--View Controller-->
+        <!--Datos Usuario-->
         <scene sceneID="ldS-Uf-f46">
             <objects>
-                <viewController id="jiR-lH-sSx" sceneMemberID="viewController">
+                <viewController title="Datos Usuario" id="jiR-lH-sSx" customClass="UsuarioController" customModule="AppPortafolio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yyy-eW-uXf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -785,6 +785,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ewm-VK-DDc"/>
+        <segue reference="F6M-zc-Cgw"/>
     </inferredMetricsTieBreakers>
 </document>
