@@ -12,7 +12,9 @@ import Alamofire
 
 class ListaProyectosController : UIViewController, UITableViewDataSource, UITableViewDelegate{
     
-    var urlProyecto = "http://portofolio-app.azurewebsites.net/?json=get_posts&post_type=proyecto"
+    @IBOutlet weak var tvProyectos: UITableView!
+    
+    var urlProyecto = "https://portofolio-app.azurewebsites.net/?json=get_posts&post_type=proyecto"
     var encontrada : String = ""
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,7 +36,7 @@ class ListaProyectosController : UIViewController, UITableViewDataSource, UITabl
                     self.encontrada = respuesta
                 }
                 if self.encontrada == "ok" {
-                    if let post = dictRespuesta.value(forKey: "post") as? NSArray {
+                    if let post = dictRespuesta.value(forKey: "posts") as? NSArray {
                         for i in post {
                             if let dictPost = i as? NSDictionary{
                                 if let fields = dictPost.value(forKey: "custom_fields") as? NSDictionary {
@@ -93,6 +95,7 @@ class ListaProyectosController : UIViewController, UITableViewDataSource, UITabl
                                 }
                             }
                         }
+                        self.tvProyectos.reloadData()
                     }
                 }
             }

@@ -612,6 +612,9 @@
                     <navigationItem key="navigationItem" id="uKo-c1-Fcd">
                         <nil key="title"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tvProyectos" destination="8Yl-d6-znN" id="bf7-zz-Fho"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alC-Em-rdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
