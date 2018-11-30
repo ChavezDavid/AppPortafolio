@@ -17,7 +17,11 @@ class ListaProyectosController : UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let celda = tableView.dequeueReusableCell(withIdentifier: "cellProyecto") as! CeldaProyectoController
+        celda.lblNombreProyecto.text = DatosProyectos.proyectos[indexPath.row].nombre
+        celda.lblAutorProyecto.text = DatosProyectos.proyectos[indexPath.row].usuario
+        celda.lblCategoriaProyecto.text = DatosProyectos.proyectos[indexPath.row].categoria
+        return celda
     }
     
     

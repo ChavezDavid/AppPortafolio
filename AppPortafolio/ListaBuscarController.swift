@@ -17,7 +17,12 @@ class ListaBuscarController : UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let celda = tableView.dequeueReusableCell(withIdentifier: "cellBuscar") as! CeldaBuscarController
+        celda.lblNombreBuscar.text = DatosProyectos.proyectos[indexPath.row].nombre
+        celda.lblAutorBuscar.text = DatosProyectos.proyectos[indexPath.row].usuario
+        celda.lblCategoriaBuscar.text = DatosProyectos.proyectos[indexPath.row].categoria
+        
+        return celda
     }
     
     
