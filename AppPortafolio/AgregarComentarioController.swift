@@ -12,4 +12,5 @@ import Alamofire
 
 class AgregarComentarioController : UIViewController{
     
+    @IBOutlet weak var txtComentario: UITextField!
 }

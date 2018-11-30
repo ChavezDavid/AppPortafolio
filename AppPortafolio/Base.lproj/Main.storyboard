@@ -67,6 +67,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Czc-Ep-sQP"/>
                     </view>
+                    <connections>
+                        <outlet property="txtContraseñaCrear" destination="sgJ-IC-qv9" id="Id1-98-GsC"/>
+                        <outlet property="txtCorreoCrear" destination="tkP-SJ-GWK" id="lDD-J3-bJQ"/>
+                        <outlet property="txtNombreCrear" destination="mTe-m6-tdo" id="MOA-NW-gZb"/>
+                        <outlet property="txtUsuarioCrear" destination="KpL-tF-t4V" id="iEH-lz-P4j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ziY-Ex-uNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,6 +128,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="txtContraseñaIniciar" destination="xq3-8U-Ina" id="baW-S9-GL9"/>
+                        <outlet property="txtUsuarioIniciar" destination="0xm-hg-KkT" id="eSb-Jg-rfK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,6 +173,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Sft-k6-hYZ"/>
                     </view>
+                    <connections>
+                        <outlet property="txtCorreoRecuperar" destination="MLu-bB-pob" id="uZA-0b-4H5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96z-RO-guu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,10 +246,18 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="imgProyectoBuscar" destination="18I-Sp-CwQ" id="Qp3-wZ-tu2"/>
+                                            <outlet property="lblAutorBuscar" destination="ivD-tp-dk7" id="iIu-Ii-3T4"/>
+                                            <outlet property="lblCategoriaBuscar" destination="wEq-7H-saQ" id="3wE-ga-CGK"/>
+                                            <outlet property="lblNombreBuscar" destination="L2G-6h-Gr6" id="cZf-wR-OF0"/>
                                             <segue destination="DDG-z8-846" kind="show" identifier="goToDetalleProyecto" id="F6M-zc-Cgw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uv2-d9-6fj" id="slr-ZN-HOn"/>
+                                    <outlet property="delegate" destination="uv2-d9-6fj" id="JcM-59-gm3"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -302,8 +323,16 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblComentario" destination="1Kv-JU-s7u" id="M6c-YU-rNh"/>
+                                            <outlet property="lblUsuarioComentario" destination="HYn-4d-Ora" id="yRs-yo-Fp2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="UAX-8H-0CL" id="UOn-yP-fpl"/>
+                                    <outlet property="delegate" destination="UAX-8H-0CL" id="LaW-qz-m2B"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZg-bf-jcj">
                                 <rect key="frame" x="16" y="588" width="343" height="30"/>
@@ -351,6 +380,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Cgd-tq-ODd"/>
                     </view>
+                    <connections>
+                        <outlet property="txtComentario" destination="7jI-bD-uRT" id="eQp-d3-km0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRd-Hp-rS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -475,6 +507,20 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Perfil" id="QvS-8q-U6e"/>
                     <navigationItem key="navigationItem" title="Id" id="FeV-1z-RTo"/>
+                    <connections>
+                        <outlet property="imgUsuarioPerfil" destination="q5P-XG-vAy" id="EIk-Bp-WwP"/>
+                        <outlet property="lblCategoriaPerfil" destination="phY-Bl-aD5" id="L6x-PY-Bh8"/>
+                        <outlet property="lblCorreoPerfil" destination="Ra8-7U-Uev" id="slO-JU-5oW"/>
+                        <outlet property="lblCreacionPerfil" destination="TKd-Nw-6U7" id="AUm-Fv-CCs"/>
+                        <outlet property="lblDescripcionPerfil" destination="Fuk-eS-YBj" id="CTn-JS-rAd"/>
+                        <outlet property="lblEdadPerfil" destination="d2C-zB-AKE" id="oPj-jS-w9c"/>
+                        <outlet property="lblEstadoPerfil" destination="Hyw-oK-XM9" id="K8X-RG-3fi"/>
+                        <outlet property="lblPaisPerfil" destination="kGP-2d-Jap" id="PYm-Ol-1Xw"/>
+                        <outlet property="lblSeguidoresPerfil" destination="q90-xT-taS" id="BH1-Ec-Yf4"/>
+                        <outlet property="lblSiguiendoPerfil" destination="BzF-zH-WQ0" id="Ffk-oM-2HD"/>
+                        <outlet property="lblSitioWebPerfil" destination="pzp-8x-oAn" id="o9q-AL-LZb"/>
+                        <outlet property="lblTelefonoPerfil" destination="ugf-eb-AaY" id="D0n-lR-USA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ExV-xW-M4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -545,10 +591,18 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="imgProyecto" destination="jos-oH-Zie" id="9tm-0e-fpR"/>
+                                            <outlet property="lblAutorProyecto" destination="6ze-fz-dRk" id="4nZ-Rg-RJB"/>
+                                            <outlet property="lblCategoriaProyecto" destination="CHP-Po-Spq" id="N4f-Kg-4IT"/>
+                                            <outlet property="lblNombreProyecto" destination="cyu-Su-vLr" id="kay-cE-NPe"/>
                                             <segue destination="DDG-z8-846" kind="show" identifier="goToProyectoDetalle" id="ewm-VK-DDc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="m12-uT-6X3" id="iKx-8r-b7d"/>
+                                    <outlet property="delegate" destination="m12-uT-6X3" id="Tvk-Z2-FTR"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -636,6 +690,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="C8y-di-DUH"/>
                     </view>
+                    <connections>
+                        <outlet property="imgProyectoDetalle" destination="qhX-cc-KPu" id="Y4U-oZ-dzs"/>
+                        <outlet property="lblAutorDetalle" destination="TnQ-ev-YOI" id="RYj-sm-vTB"/>
+                        <outlet property="lblCategoriaDetalle" destination="IUG-fE-oiS" id="f6n-I8-ccb"/>
+                        <outlet property="lblDescripcionDetalle" destination="P4O-AR-f9E" id="OxZ-NU-wab"/>
+                        <outlet property="lblEtiquetasDetalle" destination="ZbT-gO-5oP" id="klq-0s-gip"/>
+                        <outlet property="lblFechaDetalle" destination="bMJ-M7-HCr" id="zDh-CJ-Ga8"/>
+                        <outlet property="lblIdDetalle" destination="Nf5-J4-Hph" id="WJa-Dh-IK0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cu6-Co-BZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="BQm-73-82m">
@@ -751,6 +814,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ojT-G1-bks"/>
                     </view>
+                    <connections>
+                        <outlet property="imgUsuario" destination="hCN-eq-nyC" id="cZ4-UM-DVa"/>
+                        <outlet property="lblCategoriaUsuario" destination="buh-eH-aJY" id="THo-ri-Mo3"/>
+                        <outlet property="lblCorreoUsuario" destination="5Bq-vm-f09" id="P18-m5-dIU"/>
+                        <outlet property="lblCreacionUsuario" destination="G1M-Op-PYz" id="bed-8c-Zds"/>
+                        <outlet property="lblDescripcionUsuario" destination="4nK-gf-faT" id="9y6-5i-0Id"/>
+                        <outlet property="lblEdadUsuario" destination="uRe-j0-2A2" id="giK-o2-pVn"/>
+                        <outlet property="lblEstadoUsuario" destination="cPc-1a-6pb" id="Q9Y-0N-eIk"/>
+                        <outlet property="lblNombreUsuario" destination="iw6-ta-v3I" id="xRr-7U-nfq"/>
+                        <outlet property="lblPaisUsuario" destination="wMY-lg-hm0" id="5lh-vy-0T4"/>
+                        <outlet property="lblSeguidoresUsuario" destination="x5y-sl-ckR" id="Ddz-eG-Phn"/>
+                        <outlet property="lblSiguiendoUsuario" destination="Kxe-N1-9as" id="X3C-Ix-msU"/>
+                        <outlet property="lblSitioWebUsuario" destination="m0f-eT-X0r" id="MtK-Qb-bOL"/>
+                        <outlet property="lblTelefonoUsuario" destination="Q3M-4m-0Ws" id="247-HP-ySm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkC-Nq-5gT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

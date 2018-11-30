@@ -11,4 +11,5 @@ import UIKit
 
 class RecuperarContraController : UIViewController{
     
+    @IBOutlet weak var txtCorreoRecuperar: UITextField!
 }

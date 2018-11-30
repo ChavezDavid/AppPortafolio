@@ -11,4 +11,6 @@ import UIKit
 
 class CeldaComentarioController : UITableViewCell{
     
+    @IBOutlet weak var lblUsuarioComentario: UILabel!
+    @IBOutlet weak var lblComentario: UILabel!
 }

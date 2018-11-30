@@ -12,4 +12,17 @@ import Alamofire
 
 class ProyectoDetalle : UIViewController{
     
+    @IBOutlet weak var imgProyectoDetalle: UIImageView!
+    @IBOutlet weak var lblAutorDetalle: UILabel!
+    @IBOutlet weak var lblCategoriaDetalle: UILabel!
+    @IBOutlet weak var lblDescripcionDetalle: UILabel!
+    @IBOutlet weak var lblFechaDetalle: UILabel!
+    @IBOutlet weak var lblEtiquetasDetalle: UILabel!
+    @IBOutlet weak var lblIdDetalle: UILabel!
+    
+    var proyecto : Proyecto?
+    
+    override func viewDidLoad() {
+        
+    }
 }

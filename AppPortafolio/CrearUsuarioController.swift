@@ -11,4 +11,8 @@ import UIKit
 
 class CrearUsuarioController : UIViewController{
     
+    @IBOutlet weak var txtUsuarioCrear: UITextField!
+    @IBOutlet weak var txtCorreoCrear: UITextField!
+    @IBOutlet weak var txtNombreCrear: UITextField!
+    @IBOutlet weak var txtContraseñaCrear: UITextField!
 }

@@ -11,4 +11,8 @@ import UIKit
 
 class CeldaProyectoController : UITableViewCell{
     
+    @IBOutlet weak var imgProyecto: UIImageView!
+    @IBOutlet weak var lblNombreProyecto: UILabel!
+    @IBOutlet weak var lblAutorProyecto: UILabel!
+    @IBOutlet weak var lblCategoriaProyecto: UILabel!
 }

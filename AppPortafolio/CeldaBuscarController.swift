@@ -11,4 +11,8 @@ import UIKit
 
 class CeldaBuscarController : UITableViewCell{
     
+    @IBOutlet weak var imgProyectoBuscar: UIImageView!
+    @IBOutlet weak var lblNombreBuscar: UILabel!
+    @IBOutlet weak var lblAutorBuscar: UILabel!
+    @IBOutlet weak var lblCategoriaBuscar: UILabel!
 }
