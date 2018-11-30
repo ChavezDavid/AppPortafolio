@@ -29,6 +29,10 @@ class ListaProyectosController : UIViewController, UITableViewDataSource, UITabl
         return celda
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
+    }
+    
     override func viewDidLoad() {
         Alamofire.request(urlProyecto).responseJSON { response in
             if let dictRespuesta = response.result.value as? NSDictionary{
@@ -102,4 +106,10 @@ class ListaProyectosController : UIViewController, UITableViewDataSource, UITabl
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToProyectoDetalle" {
+            let destino = segue.destination as! ProyectoDetalle
+            destino.proyecto = DatosProyectos.proyectos[(tvProyectos.indexPathForSelectedRow?.row)!]
+        }
+    }
 }

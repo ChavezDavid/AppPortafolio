@@ -12,6 +12,8 @@ import Alamofire
 
 class ListaBuscarController : UIViewController, UITableViewDataSource, UITableViewDelegate{
     
+    var urlProyecto = ""
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DatosProyectos.proyectos.count
     }
@@ -25,5 +27,12 @@ class ListaBuscarController : UIViewController, UITableViewDataSource, UITableVi
         return celda
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
+    }
     
+    
+    override func viewDidLoad() {
+        
+    }
 }

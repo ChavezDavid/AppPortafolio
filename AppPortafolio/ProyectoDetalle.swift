@@ -23,6 +23,13 @@ class ProyectoDetalle : UIViewController{
     var proyecto : Proyecto?
     
     override func viewDidLoad() {
-        
+        if proyecto != nil{
+            lblAutorDetalle.text = proyecto?.usuario
+            lblCategoriaDetalle.text = proyecto?.categoria
+            lblDescripcionDetalle.text = proyecto?.descripcion
+            lblFechaDetalle.text = proyecto?.fechaCreacion
+            lblEtiquetasDetalle.text = proyecto?.etiqueta
+            lblIdDetalle.text = proyecto?.id
+        }
     }
 }
